@@ -14,3 +14,14 @@ Usage:
 2. in layout:
   * = stylesheet_link_tag :qaptcha
   * = javascript_include_tag :qaptcha
+3. in your haml page place the following div:
+
+    * #QapTcha
+
+4. in your application.js:
+
+>$(document).ready(function(){
+>
+>    $('#QapTcha').QapTcha();
+>
+>});
