@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["AlexZhang"]
   s.email       = ["blackanger.z@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{A captcha system with jQuery & jQuery UI for Rails 3}
-  s.description = %q{jQuery captcha system with jQuery & jQuery UI for Rails 3}
+  s.summary     = %q{A jQery slide captcha system with jQuery & jQuery UI for Rails 3}
+  s.description = %q{jQuery slide captcha system with jQuery & jQuery UI for Rails 3}
   s.files       =  FileList["[A-Z]*", "{app,config,lib}/**/*"]
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.extra_rdoc_files = FileList["[A-Z]*"] - %w(Gemfile Rakefile)
