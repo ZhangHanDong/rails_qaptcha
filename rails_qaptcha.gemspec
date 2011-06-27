@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "rails_qaptcha/version"
+require "rails_qaptcha/engine"
+require 'rake'
 
 Gem::Specification.new do |s|
   s.name        = "rails_qaptcha"
@@ -8,13 +10,16 @@ Gem::Specification.new do |s|
   s.authors     = ["AlexZhang"]
   s.email       = ["blackanger.z@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
-
+  s.summary     = %q{A captcha system with jQuery & jQuery UI for Rails 3}
+  s.description = %q{jQuery captcha system with jQuery & jQuery UI for Rails 3}
+  s.files       =  FileList["[A-Z]*", "{app,config,lib}/**/*"]
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.extra_rdoc_files = FileList["[A-Z]*"] - %w(Gemfile Rakefile)
   s.rubyforge_project = "rails_qaptcha"
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.add_dependency "rails", "3.0.8"
+  
+  s.add_development_dependency 'rspec', ['>= 0']
+  s.add_development_dependency 'rspec-rails', ['>= 0']
 end
