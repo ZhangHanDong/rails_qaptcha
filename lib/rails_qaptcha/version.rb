@@ -1,3 +1,3 @@
 module RailsQaptcha
-  VERSION = "0.0.1-beta1"
+  VERSION = "0.0.1.beat1"
 end
