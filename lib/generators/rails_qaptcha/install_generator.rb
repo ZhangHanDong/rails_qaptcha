@@ -17,7 +17,7 @@ module RailsQaptcha
         copy_file "../media/javascripts/jquery-ui.js",       "public/javascripts/qaptcha/jquery-ui.js"
         copy_file "../media/javascripts/jquery.ui.touch.js", "public/javascripts/qaptcha/jquery.ui.touch.js"
         copy_file "../media/javascripts/QapTcha.jquery.js",  "public/javascripts/qaptcha/QapTcha.jquery.js"
-        copy_file "../media/stylesheets/QapTcha.jquery.css", "public/stylessheets/qaptcha/QapTcha.jquery.css"
+        copy_file "../media/stylesheets/QapTcha.jquery.css", "public/stylesheets/qaptcha/QapTcha.jquery.css"
       end
     end
 
