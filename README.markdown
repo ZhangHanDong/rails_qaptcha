@@ -22,6 +22,6 @@ Usage:
 
 >$(document).ready(function(){
 >
->    $('#QapTcha').QapTcha();
+>    $('#QapTcha').QapTcha({disabledSubmit:false,autoRevert:true});
 >
 >});
