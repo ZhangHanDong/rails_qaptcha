@@ -23,7 +23,9 @@ Usage:
 >$(document).ready(function(){
 >
 >    $('#QapTcha').QapTcha({autoRevert:true});
+>
 >    // or
+>
 >    $('.QapTcha').QapTcha({autoRevert:true});
 >});
 
