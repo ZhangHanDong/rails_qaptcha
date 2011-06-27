@@ -9,7 +9,7 @@ module RailsQaptcha
     # =====================================
     config.before_initialize do
       config.action_view.javascript_expansions[:qaptcha] = %w(qaptcha/jquery-ui.js qaptcha/jquery.ui.touch.js qaptcha/QapTcha.jquery.js)
-      config.action_view.register_stylesheet_expansion[:qaptcha] = %w(QapTcha.jquery.css)
+      config.action_view.tylesheet_expansion[:qaptcha]   = %w(QapTcha.jquery.css)
     end
     
   end

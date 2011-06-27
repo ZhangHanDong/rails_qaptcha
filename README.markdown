@@ -11,4 +11,6 @@ Usage:
 ------
 
 1. rails g rails_qaptcha:install
-2. 
+2. in layout:
+  * = stylesheet_link_tag :qaptcha
+  * = javascript_include_tag :qaptcha
