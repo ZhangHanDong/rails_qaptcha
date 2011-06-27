@@ -7,16 +7,20 @@
 #
 
 class QaptchasController < ApplicationController
-  respond_to :json
 
   def check
     iqaptcha = params[:iQapTcha]
     if iqaptcha.blank?
-      session[:iQapTcha] = true
+      session[:iQapTcha] = true 
+      msg = "Form can be submited!"
     else
       session[:iQapTcha] = false
+      msg = "Form can not be submited!"
     end
-    respond_with(session[:iQapTcha])
+    @result = {:check => session[:iQapTcha], :msg => msg}
+    respond_to do |format|
+      format.json { render :json => @result.to_json }
+    end
   end #check
 
 end

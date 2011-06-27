@@ -22,6 +22,8 @@ Usage:
 
 >$(document).ready(function(){
 >
->    $('#QapTcha').QapTcha({disabledSubmit:false,autoRevert:true});
+>    $('#QapTcha').QapTcha({autoRevert:true});
 >
 >});
+
+——If you want to control it in server side, you need to judge session[:iQapTcha]——
