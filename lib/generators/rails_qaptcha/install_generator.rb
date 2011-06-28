@@ -11,7 +11,7 @@ module RailsQaptcha
       
       source_root File.expand_path('../media', __FILE__)
       desc "Copies media files to main project"
-      def copy_mongoid_yml_files
+      def copy_media_files
         copy_file "../media/images/bg_QapTcha.png",          "public/stylesheets/image/qaptcha/bg_QapTcha.png"
         copy_file "../media/images/sprites.png",             "public/stylesheets/image/qaptcha/sprites.png"
         copy_file "../media/javascripts/jquery-ui.js",       "public/javascripts/qaptcha/jquery-ui.js"
